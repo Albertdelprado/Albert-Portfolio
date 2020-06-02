@@ -4,35 +4,50 @@
         <title>Albert del Prado Tusell</title>
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/hover-min.css">
+        <link rel="stylesheet" href="styles/fontawesome/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     </head>
 
     <body>
-        <nav>
-            <div id="Buscador">
-                <a href="#Aboutme" class="ng-binding"> About me</a>
-                <a href="#Academicrecords" class="ng-binding"> Academic records</a>
-                <a href="#Workexperience" class="ng-binding"> Work experience</a>
-                <a href="#Contact" class="ng-binding"> Contact</a>
-            </div>
+        <nav id="BuscadorWeb">
+            <a href="#Aboutme" class="ng-binding"> About me</a>
+            <a href="#Academicrecords1" class="ng-binding"> Academic records</a>
+            <a href="#Workexperience" class="ng-binding"> Work experience</a>
+            <a href="#Contact" class="ng-binding"> Contact</a>
         </nav>
-        <main>
-            <div id=Portada>
-                <h3>Albert del Prado Tusell</h3>
-                <h4>Mechanical Engineer</h4>
-            </div>
-            <div id="Aboutme">
-                <h1>About me</h1>
-                <p>I'm Albert del Prado,m ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed luctus consequat euismod. Sed in aliquam mauris. Pellentesque lacus nunc, fringilla at lorem ut, tristique aliquam metus. Sed lectus urna, congue at erat vel, pulvinar pharetra purus. Cras urna diam, fringilla eget faucibus non, aliquet ac turpis. Aliquam erat volutpat. Integer quis lectus vel elit condimentum ultricies.</p>
+        <nav id="BuscadorMob">
+            <i onclick="mostrarDesplegable()" class="fas fa-bars"></i>
+             
+            <main>
+                <div id=Portada>
+                    <h3>Albert del Prado Tusell</h3>
+                    <h4>Mechanical Engineer</h4>
+                    <div class="Bannerdown">
+                        <a href="#Aboutme" du-smooth-scroll>
+                            <img class="hvr-hang" src="assets/Flecha1.png" alt="DownArrowIcon">
+                        </a>
+                    </div>
+                </div>
+                <div id="Aboutme">
+                    <h1>About me</h1>
+                    <p>I'm Albert del Prado,m ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed luctus consequat euismod. Sed in aliquam mauris. Pellentesque lacus nunc, fringilla at lorem ut, tristique aliquam metus. Sed lectus urna, congue at erat vel, pulvinar pharetra purus. Cras urna diam, fringilla eget faucibus non, aliquet ac turpis. Aliquam erat volutpat. Integer quis lectus vel elit condimentum ultricies.</p>
                     <p> ipsum diam, rutrum in varius non, venenatis vitae ante. Mauris mollis id odio ac consectetur. Sed maximus lorem urna, vel vestibulum est rhoncus non. Duis et nibh et enim gravida placerat ut id mauris. Quisque placerat, eros sed aliquet sagittis, lacus arcu fermentum felis, vel consectetur est magna sed ri rutrum in varius non, venenatis vitae ante. Mauris mollis id odio ac consectetur. Sed maximus lorem urna, vel vestibulum est rhoncus non. Duis et nibh et enim gravida placerat ut id mauris. Quisque placerat, eros sed aliq</p>
-                     <img src="assets/Barcelona.jpg" class="Barcelona">
-            </div>
-            <div id="Fondo2"></div>
-            <div id="Academicrecords">
-                <h1>Academic records</h1>
-                <img src="assets/grafic_estudis.PNG" title="Grafic_estudis">
-                <div id=Informacion_estudios> 
-                    <pre id="Informacion_texto">
+                    <p> ipsum diam, rutrum in varius non, venenatis vitae ante. Mauris mollis id odio ac consectetur. Sed maximus lorem urna, vel vestibulum est rhoncus non. Duis et nibh et enim gravida placerat ut id mauris. Quisque placerat, eros sed aliquet sagittis, lacus arcu fermentum felis, vel consectetur est magna sed ri rutrum in varius non, venenatis vitae ante. Mauris mollis id odio ac consectetur. Sed maximus lorem urna, vel vestibulum est rhoncus non. Duis et nibh et enim gravida placerat ut id mauris. Quisque placerat, eros sed aliq</p>
+                    <img src="assets/Barcelona.jpg" class="Barcelona">
+                </div>
+                <div class="Fondo2">
+                    <div class="Fondo2Sombra"></div>
+                </div>
+                <div class="Academicrecords" id=Academicrecords1>
+                    <div class="Columna Esq">
+                        <h1>Academic records</h1>
+                        <img src="assets/grafic_estudis.PNG" title="Grafic_estudis">
+                    </div>
+                    <div class="Columna Dreta"> 
+                        <pre>
 <b>UAB</b>: Autonomous University of Barcelona         
 Degree in Mechanical engineer
 
@@ -56,14 +71,38 @@ Electrical installations designer. <b>(intermediate)</b>
         <li>Cinematic simulation</li>
         <li>3D printing design</li>
 </ol>
-
-
-
                     </pre>
+                    </div>
                 </div>
-            </div>
-            <div id="Workexperience">
-            </div>
-        </main>
-    </body>
-</html>
+                <div class="Fondo3"></div>
+                <div class="container">
+                    <h1> Professional experience</h1>
+                    <hr>
+                    <div class="constabs">
+                        <div class="overf">
+                            <div class="lefttabs">
+                                <button class="tablinks" onclick="openExplanation( event, 'Automotive')"> Autmotive </button>
+                                <button class="tablinks" onclick="openExplanation( event, 'Chemical')"> Chemical </button>
+                            </div>
+                            <div id="Automotive" class="tabcontent">
+                                <h3>Automotive</h3>
+                                <p>London is the capital city of England.</p>
+                            </div>
+                            <div id="Chemical" class="tabcontent">
+                                <h3>Chemical</h3>
+                                <p>London is the capital city of England.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <a href="http://linkedin.com/in/albert-del-prado-tusell-989b6a145" target="_blank">
+                    <img src="assets/LINKEDIN.png" aria-hidden="true">
+                </a>
+                <p> © Albert del Prado 2020</p>
+                <script src="scripts/jquery3-5-1.js"></script> 
+        <script type="text/javascript" src="scripts/tiempo.js"></script>
+            </footer>
+            </body>
+        </html>
